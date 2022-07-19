@@ -1,0 +1,17 @@
+# some files
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+
+# framework packages
+.umi
+.umi-production
+.umi-test
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# command packages
+dist
+node_modules
+package.json
