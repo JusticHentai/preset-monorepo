@@ -2,12 +2,17 @@
   "name": "@douza/preset",
   "version": "0.0.1",
   "description": "持续集成常用开发配置",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "douza"
+  ],
   "license": "ISC",
+  "author": "douza",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "devDependencies": {
+    "@volar/vue-typescript": "^0.38.8",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",

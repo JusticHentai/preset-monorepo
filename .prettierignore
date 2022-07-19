@@ -14,4 +14,3 @@ pnpm-workspace.yaml
 # command packages
 dist
 node_modules
-package.json
