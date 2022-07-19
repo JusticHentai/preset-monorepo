@@ -12,10 +12,16 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "@volar/vue-typescript": "^0.38.8",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
+    "react": "^18.2.0",
     "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
   }
 }
