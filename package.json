@@ -1,5 +1,5 @@
 {
-  "name": "preset",
+  "name": "@douza/preset",
   "version": "0.0.1",
   "description": "持续集成常用开发配置",
   "main": "index.js",
