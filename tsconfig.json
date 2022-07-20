@@ -15,7 +15,7 @@
     "allowJs": false,
     "noUnusedLocals": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": true, // monorepo 别用这个
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "skipLibCheck": true,
