@@ -12,6 +12,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@douza/eslint-config": "workspace:*",
     "@douza/prettier-config": "workspace:*",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
