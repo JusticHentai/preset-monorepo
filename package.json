@@ -1,5 +1,5 @@
 {
-  "name": "@douza/preset",
+  "name": "@douza/preset-monorepo",
   "version": "0.0.1",
   "description": "持续集成常用开发配置",
   "keywords": [
@@ -12,13 +12,11 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@douza/prettier-config": "workspace:*",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "@volar/vue-typescript": "^0.38.8",
     "eslint": "^8.20.0",
     "prettier": "^2.7.1",
-    "prettier-plugin-organize-imports": "^3.0.0",
-    "prettier-plugin-packagejson": "^2.2.18",
     "react": "^18.2.0",
     "typescript": "^4.7.4"
   },

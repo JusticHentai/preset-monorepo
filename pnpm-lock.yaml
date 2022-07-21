@@ -1,26 +1,38 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@types/react': ^18.0.15
-  '@types/react-dom': ^18.0.6
-  '@volar/vue-typescript': ^0.38.8
-  eslint: ^8.20.0
-  prettier: ^2.7.1
-  prettier-plugin-organize-imports: ^3.0.0
-  prettier-plugin-packagejson: ^2.2.18
-  react: ^18.2.0
-  typescript: ^4.7.4
+importers:
 
-devDependencies:
-  '@types/react': registry.npmmirror.com/@types/react/18.0.15
-  '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.6
-  '@volar/vue-typescript': registry.npmmirror.com/@volar/vue-typescript/0.38.8
-  eslint: registry.npmmirror.com/eslint/8.20.0
-  prettier: registry.npmmirror.com/prettier/2.7.1
-  prettier-plugin-organize-imports: registry.npmmirror.com/prettier-plugin-organize-imports/3.0.0_gd3y7r3s3evy6b2vthd7dmacga
-  prettier-plugin-packagejson: registry.npmmirror.com/prettier-plugin-packagejson/2.2.18_prettier@2.7.1
-  react: registry.npmmirror.com/react/18.2.0
-  typescript: registry.npmmirror.com/typescript/4.7.4
+  .:
+    specifiers:
+      '@douza/prettier-config': workspace:*
+      '@types/react': ^18.0.15
+      '@types/react-dom': ^18.0.6
+      eslint: ^8.20.0
+      prettier: ^2.7.1
+      react: ^18.2.0
+      typescript: ^4.7.4
+    devDependencies:
+      '@douza/prettier-config': link:packages/prettier-config
+      '@types/react': registry.npmmirror.com/@types/react/18.0.15
+      '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.6
+      eslint: registry.npmmirror.com/eslint/8.20.0
+      prettier: registry.npmmirror.com/prettier/2.7.1
+      react: registry.npmmirror.com/react/18.2.0
+      typescript: registry.npmmirror.com/typescript/4.7.4
+
+  packages/prettier-config:
+    specifiers:
+      '@volar/vue-typescript': ^0.38.8
+      prettier: ^2.7.1
+      prettier-plugin-organize-imports: ^3.0.0
+      prettier-plugin-packagejson: ^2.2.18
+      typescript: ^4.7.4
+    devDependencies:
+      '@volar/vue-typescript': registry.npmmirror.com/@volar/vue-typescript/0.38.9
+      prettier: registry.npmmirror.com/prettier/2.7.1
+      prettier-plugin-organize-imports: registry.npmmirror.com/prettier-plugin-organize-imports/3.0.0_gd3y7r3s3evy6b2vthd7dmacga
+      prettier-plugin-packagejson: registry.npmmirror.com/prettier-plugin-packagejson/2.2.18_prettier@2.7.1
+      typescript: registry.npmmirror.com/typescript/4.7.4
 
 packages:
 
@@ -148,40 +160,40 @@ packages:
     version: 0.16.2
     dev: true
 
-  registry.npmmirror.com/@volar/code-gen/0.38.8:
-    resolution: {integrity: sha512-e37jd+JwNjBpWiBblsdmYMbJ9bELiuj2yZrsXv1IVKpYNSfvS92ZiYjJqVXHUwpzNeZjFG0RCd5nTpbiebwANw==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/code-gen/-/code-gen-0.38.8.tgz}
+  registry.npmmirror.com/@volar/code-gen/0.38.9:
+    resolution: {integrity: sha512-n6LClucfA+37rQeskvh9vDoZV1VvCVNy++MAPKj2dT4FT+Fbmty/SDQqnsEBtdEe6E3OQctFvA/IcKsx3Mns0A==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/code-gen/-/code-gen-0.38.9.tgz}
     name: '@volar/code-gen'
-    version: 0.38.8
+    version: 0.38.9
     dependencies:
-      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.8
+      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.9
     dev: true
 
-  registry.npmmirror.com/@volar/source-map/0.38.8:
-    resolution: {integrity: sha512-JZvpjW/z2U3wq5wvwcTounPrRAZuSl4hlVKr3y7y72bKr++6W05OnX7fl/ddw39G/wLHdI2ag5+4JWsSd/EYhg==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/source-map/-/source-map-0.38.8.tgz}
+  registry.npmmirror.com/@volar/source-map/0.38.9:
+    resolution: {integrity: sha512-ba0UFoHDYry+vwKdgkWJ6xlQT+8TFtZg1zj9tSjj4PykW1JZDuM0xplMotLun4h3YOoYfY9K1huY5gvxmrNLIw==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/source-map/-/source-map-0.38.9.tgz}
     name: '@volar/source-map'
-    version: 0.38.8
+    version: 0.38.9
     dev: true
 
-  registry.npmmirror.com/@volar/vue-code-gen/0.38.8:
-    resolution: {integrity: sha512-iQVNmIu1TqnqTko+l9yeylmZipZ8zNH20XZAK9+48hkv2fEQnnJn5AI2W9Zb2M5DkGMpbYiJk9Fq1vm51YY1+g==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/vue-code-gen/-/vue-code-gen-0.38.8.tgz}
+  registry.npmmirror.com/@volar/vue-code-gen/0.38.9:
+    resolution: {integrity: sha512-tzj7AoarFBKl7e41MR006ncrEmNPHALuk8aG4WdDIaG387X5//5KhWC5Ff3ZfB2InGSeNT+CVUd74M0gS20rjA==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/vue-code-gen/-/vue-code-gen-0.38.9.tgz}
     name: '@volar/vue-code-gen'
-    version: 0.38.8
+    version: 0.38.9
     dependencies:
-      '@volar/code-gen': registry.npmmirror.com/@volar/code-gen/0.38.8
-      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.8
+      '@volar/code-gen': registry.npmmirror.com/@volar/code-gen/0.38.9
+      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.9
       '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core/3.2.37
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.2.37
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.37
     dev: true
 
-  registry.npmmirror.com/@volar/vue-typescript/0.38.8:
-    resolution: {integrity: sha512-7WeFt5piz9I6FKw2cQQCWm+75MxS6xCOGm300iu+hJORlroN2dwWbwj97pQnDGbjQbftCRplUYf0GqmhcOsanQ==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/vue-typescript/-/vue-typescript-0.38.8.tgz}
+  registry.npmmirror.com/@volar/vue-typescript/0.38.9:
+    resolution: {integrity: sha512-iJMQGU91ADi98u8V1vXd2UBmELDAaeSP0ZJaFjwosClQdKlJQYc6MlxxKfXBZisHqfbhdtrGRyaryulnYtliZw==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/vue-typescript/-/vue-typescript-0.38.9.tgz}
     name: '@volar/vue-typescript'
-    version: 0.38.8
+    version: 0.38.9
     dependencies:
-      '@volar/code-gen': registry.npmmirror.com/@volar/code-gen/0.38.8
-      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.8
-      '@volar/vue-code-gen': registry.npmmirror.com/@volar/vue-code-gen/0.38.8
+      '@volar/code-gen': registry.npmmirror.com/@volar/code-gen/0.38.9
+      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.9
+      '@volar/vue-code-gen': registry.npmmirror.com/@volar/vue-code-gen/0.38.9
       '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.37
       '@vue/reactivity': registry.npmmirror.com/@vue/reactivity/3.2.37
     dev: true
