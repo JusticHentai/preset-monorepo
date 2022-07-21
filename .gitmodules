@@ -2,3 +2,7 @@
 	path = packages/prettier-config
 	url = git@github.com:JusticHentai/prettier-config.git
 	branch = main
+[submodule "packages/eslint-config"]
+	path = packages/eslint-config
+	url = git@github.com:JusticHentai/eslint-config.git
+	branch = main
