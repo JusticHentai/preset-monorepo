@@ -21,5 +21,11 @@
 - `tsconfig.json`：配置 ts 规则
 
 **dev：**
+- `typescript` ts 本体
 - `@types/react`：`react` 一套
 - `@types/react-dom`：同上
+
+## Eslint
+
+**dev**
+- `eslint` eslint 本体
