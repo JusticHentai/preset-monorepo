@@ -9,7 +9,7 @@
   "author": "douza",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "eslint . && prettier --write ."
   },
   "devDependencies": {
     "@douza/eslint-config": "workspace:*",
