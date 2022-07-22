@@ -14,14 +14,8 @@
   "devDependencies": {
     "@douza/eslint-config": "workspace:*",
     "@douza/prettier-config": "workspace:*",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
     "eslint": "^8.20.0",
     "prettier": "^2.7.1",
-    "react": "^18.2.0",
     "typescript": "^4.7.4"
-  },
-  "peerDependencies": {
-    "react": ">=17.0.0"
   }
 }
