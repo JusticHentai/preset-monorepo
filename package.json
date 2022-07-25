@@ -7,7 +7,6 @@
   ],
   "license": "ISC",
   "author": "douza",
-  "main": "index.js",
   "scripts": {
     "format": "eslint . && prettier --write ."
   },
