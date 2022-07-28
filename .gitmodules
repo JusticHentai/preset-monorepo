@@ -6,3 +6,7 @@
 	path = packages/eslint-config
 	url = git@github.com:JusticHentai/eslint-config.git
 	branch = main
+[submodule "packages/stylelint-config"]
+	path = packages/stylelint-config
+	url = git@github.com:JusticHentai/stylelint-config.git
+	branch = main

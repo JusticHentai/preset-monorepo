@@ -1,0 +1,126 @@
+// 文字超多少行变省略号 $num 行数
+@mixin text-over($num) {
+  @if $num == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @if $num > 1 {
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+  }
+}
+
+// 隐藏滚动条 $item为选择器
+@mixin scroll-hidden($item) {
+  #{$item}::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  #{$item}::-webkit-scrollbar-thumb {
+    background-color: #0000;
+    border-radius: 0;
+  }
+  #{$item}::-webkit-scrollbar-track {
+    background: #ecf0f100;
+  }
+}
+
+// button
+@mixin button {
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:active {
+      transform: scale(1.02);
+    }
+  }
+}
+
+// mask
+@mixin scroll-in-out($rotate, $width) {
+  mask-image:
+    linear-gradient(
+      $rotate,
+      transparent,
+      #000 $width,
+      #000 (100% - $width),
+      transparent
+    );
+}
+
+// 视频列表
+@mixin item-list($itemName, $width, $height, $left, $top, $row, $column) {
+  width: $width * $row + $left * ($row - 1);
+
+  @include flexWarp;
+
+  @for $i from 1 through $row * $column {
+    #{$itemName}:nth-child(#{$i}) {
+      position: relative;
+      width: $width;
+      height: $height;
+
+      @if $i % $row != 1 {
+        margin-left: $left;
+      }
+
+      @if $i > $row {
+        margin-top: $top;
+      }
+    }
+  }
+}
+
+// 排行榜列表
+@mixin item-list-rank($itemName, $width, $height, $left, $top, $row, $column) {
+  width: $width * $row + $left * ($row - 1);
+
+  @include flexWarp;
+
+  @for $i from 1 through $row * $column {
+    #{$itemName}:nth-child(#{$i}) {
+      position: relative;
+      width: $width;
+      height: $height;
+
+      @if ($i - 1) % $row != 1 {
+        margin-left: $left;
+      }
+
+      @if $i == 1 {
+        margin:
+          $top
+          (($width * $row + $left * ($row - 1)) - $width) /
+          2
+          0
+          (($width * $row + $left * ($row - 1)) - $width)/
+          2;
+      }
+
+      @if ($i - 1) > $row {
+        margin-top: $top;
+      }
+    }
+  }
+}
+
+@mixin cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #ffffff50;
+  border-radius: 50%;
+  pointer-events: none;
+}

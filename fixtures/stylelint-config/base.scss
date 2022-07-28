@@ -1,0 +1,116 @@
+// flex
+@mixin flex-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-justify {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-y {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+@mixin flex-y-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-warp {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  align-items: center;
+  justify-content: start;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// block init
+@mixin block-r {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin block-a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin block-f {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin block-rw {
+  position: relative;
+  width: 100%;
+}
+
+@mixin block-aw {
+  position: absolute;
+  width: 100%;
+}
+
+@mixin block-fw {
+  position: fixed;
+  width: 100%;
+}
+
+@mixin block-rh {
+  position: relative;
+  height: 100%;
+}
+
+@mixin block-ah {
+  position: absolute;
+  height: 100%;
+}
+
+@mixin block-fh {
+  position: fixed;
+  height: 100%;
+}
+
+// image
+@mixin image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+@mixin image-contain {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  user-select: none;
+}
