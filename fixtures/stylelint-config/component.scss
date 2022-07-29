@@ -2,12 +2,12 @@
 @mixin text-over($num) {
   @if $num == 1 {
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   @if $num > 1 {
-    display: box;
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-all;
@@ -47,14 +47,13 @@
 
 // mask
 @mixin scroll-in-out($rotate, $width) {
-  mask-image:
-    linear-gradient(
-      $rotate,
-      transparent,
-      #000 $width,
-      #000 (100% - $width),
-      transparent
-    );
+  mask-image: linear-gradient(
+    $rotate,
+    transparent,
+    #000 $width,
+    #000 (100% - $width),
+    transparent
+  );
 }
 
 // 视频列表
@@ -97,8 +96,7 @@
       }
 
       @if $i == 1 {
-        margin:
-          $top
+        margin: $top
           (($width * $row + $left * ($row - 1)) - $width) /
           2
           0
