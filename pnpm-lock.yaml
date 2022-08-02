@@ -55,12 +55,12 @@ importers:
     specifiers:
       '@volar/vue-typescript': ^0.39.4
       prettier: ^2.7.1
-      prettier-plugin-organize-imports: ^3.0.0
+      prettier-plugin-organize-imports: ^3.0.1
       prettier-plugin-packagejson: ^2.2.18
       typescript: ^4.7.4
     dependencies:
       '@volar/vue-typescript': 0.39.4
-      prettier-plugin-organize-imports: registry.npmmirror.com/prettier-plugin-organize-imports/3.0.0_gd3y7r3s3evy6b2vthd7dmacga
+      prettier-plugin-organize-imports: 3.0.1_2yfdyk7bshgclxasryxhyvsjou
       prettier-plugin-packagejson: registry.npmmirror.com/prettier-plugin-packagejson/2.2.18_prettier@2.7.1
     devDependencies:
       prettier: registry.npmmirror.com/prettier/2.7.1
@@ -237,6 +237,21 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /prettier-plugin-organize-imports/3.0.1_2yfdyk7bshgclxasryxhyvsjou:
+    resolution: {integrity: sha512-pdMWKtoHRQ+9y1WB3mA1wzMkjzJzB4ycfOPlfZpmzq+YFZQIpkszJJQQHQ8EYVyULlLohlOnAxSmXfaKWpRAAw==}
+    peerDependencies:
+      '@volar/vue-typescript': '>=0.39.0'
+      prettier: '>=2.0'
+      typescript: '>=2.9'
+    peerDependenciesMeta:
+      '@volar/vue-typescript':
+        optional: true
+    dependencies:
+      '@volar/vue-typescript': 0.39.4
+      prettier: registry.npmmirror.com/prettier/2.7.1
+      typescript: registry.npmmirror.com/typescript/4.7.4
     dev: false
 
   /semver/7.3.7:
@@ -4365,19 +4380,6 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       fast-diff: registry.npmmirror.com/fast-diff/1.2.0
-    dev: false
-
-  registry.npmmirror.com/prettier-plugin-organize-imports/3.0.0_gd3y7r3s3evy6b2vthd7dmacga:
-    resolution: {integrity: sha512-juSCJs5TMOqGGPaN/A/1xzWFzRPH2LG1LPLCr64dzKaVnPafJdtgDNmDVlU+8A4LbQzVJg0DTvgA8swBuIUhlg==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-3.0.0.tgz}
-    id: registry.npmmirror.com/prettier-plugin-organize-imports/3.0.0
-    name: prettier-plugin-organize-imports
-    version: 3.0.0
-    peerDependencies:
-      prettier: '>=2.0'
-      typescript: '>=2.9'
-    dependencies:
-      prettier: registry.npmmirror.com/prettier/2.7.1
-      typescript: registry.npmmirror.com/typescript/4.7.4
     dev: false
 
   registry.npmmirror.com/prettier-plugin-packagejson/2.2.18_prettier@2.7.1:
