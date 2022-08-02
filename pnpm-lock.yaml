@@ -53,13 +53,13 @@ importers:
 
   packages/prettier-config:
     specifiers:
-      '@volar/vue-typescript': ^0.38.8
+      '@volar/vue-typescript': ^0.38.9
       prettier: ^2.7.1
       prettier-plugin-organize-imports: ^3.0.0
       prettier-plugin-packagejson: ^2.2.18
       typescript: ^4.7.4
     dependencies:
-      '@volar/vue-typescript': registry.npmmirror.com/@volar/vue-typescript/0.38.9
+      '@volar/vue-typescript': 0.38.9
       prettier-plugin-organize-imports: registry.npmmirror.com/prettier-plugin-organize-imports/3.0.0_gd3y7r3s3evy6b2vthd7dmacga
       prettier-plugin-packagejson: registry.npmmirror.com/prettier-plugin-packagejson/2.2.18_prettier@2.7.1
     devDependencies:
@@ -94,6 +94,16 @@ importers:
       stylelint: registry.npmmirror.com/stylelint/14.9.1
 
 packages:
+
+  /@volar/vue-typescript/0.38.9:
+    resolution: {integrity: sha512-iJMQGU91ADi98u8V1vXd2UBmELDAaeSP0ZJaFjwosClQdKlJQYc6MlxxKfXBZisHqfbhdtrGRyaryulnYtliZw==}
+    dependencies:
+      '@volar/code-gen': registry.npmmirror.com/@volar/code-gen/0.38.9
+      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.9
+      '@volar/vue-code-gen': registry.npmmirror.com/@volar/vue-code-gen/0.38.9
+      '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.37
+      '@vue/reactivity': registry.npmmirror.com/@vue/reactivity/3.2.37
+    dev: false
 
   registry.npmmirror.com/@ampproject/remapping/2.2.0:
     resolution: {integrity: sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@ampproject/remapping/-/remapping-2.2.0.tgz}
@@ -732,18 +742,6 @@ packages:
       '@vue/compiler-core': registry.npmmirror.com/@vue/compiler-core/3.2.37
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.2.37
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.37
-    dev: false
-
-  registry.npmmirror.com/@volar/vue-typescript/0.38.9:
-    resolution: {integrity: sha512-iJMQGU91ADi98u8V1vXd2UBmELDAaeSP0ZJaFjwosClQdKlJQYc6MlxxKfXBZisHqfbhdtrGRyaryulnYtliZw==, registry: http://registry.npm.bilibili.co/, tarball: https://registry.npmmirror.com/@volar/vue-typescript/-/vue-typescript-0.38.9.tgz}
-    name: '@volar/vue-typescript'
-    version: 0.38.9
-    dependencies:
-      '@volar/code-gen': registry.npmmirror.com/@volar/code-gen/0.38.9
-      '@volar/source-map': registry.npmmirror.com/@volar/source-map/0.38.9
-      '@volar/vue-code-gen': registry.npmmirror.com/@volar/vue-code-gen/0.38.9
-      '@vue/compiler-sfc': registry.npmmirror.com/@vue/compiler-sfc/3.2.37
-      '@vue/reactivity': registry.npmmirror.com/@vue/reactivity/3.2.37
     dev: false
 
   registry.npmmirror.com/@vue/compiler-core/3.2.37:
