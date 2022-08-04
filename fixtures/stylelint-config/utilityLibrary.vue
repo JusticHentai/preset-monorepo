@@ -12,7 +12,7 @@ import { Component, Emit, Vue } from 'vue-property-decorator'
 })
 export default class utilityLibrary extends Vue {
   mounted() {
-    const a=1
+    const a = 1
     // const myComponent = new MyComponent()
   }
 
