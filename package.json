@@ -1,5 +1,5 @@
 {
-  "name": "@douza/preset-monorepo",
+  "name": "@justichentai/preset-monorepo",
   "version": "0.0.1",
   "description": "持续集成常用开发配置",
   "keywords": [
@@ -15,9 +15,9 @@
     "lint:stylelint": "stylelint \"**/*.(sc|c)ss\""
   },
   "devDependencies": {
-    "@douza/eslint-config": "workspace:*",
-    "@douza/prettier-config": "workspace:*",
-    "@douza/stylelint-config": "workspace:*",
+    "@justichentai/eslint-config": "workspace:*",
+    "@justichentai/prettier-config": "workspace:*",
+    "@justichentai/stylelint-config": "workspace:*",
     "eslint": "^8.20.0",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
