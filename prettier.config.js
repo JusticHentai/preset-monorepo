@@ -1,1 +1,1 @@
-module.exports = require.resolve('@douza/prettier-config')
+module.exports = require.resolve('@justichentai/prettier-config')
