@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    '@douza/stylelint-config/basic',
-    '@douza/stylelint-config/scss',
-    '@douza/stylelint-config/vue',
+    '@justichentai/stylelint-config/basic',
+    '@justichentai/stylelint-config/scss',
+    '@justichentai/stylelint-config/vue',
   ],
 }
